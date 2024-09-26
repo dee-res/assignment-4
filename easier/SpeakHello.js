@@ -3,7 +3,7 @@
 (function (window) {
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 var speakWord = "Hello";   
-speakWord.sayHello function speak(name) {
+speakWord.sayHello = function speak(name) {
   console.log(speakWord + " " + name);
 }
   window.speakWord = speakWord;
