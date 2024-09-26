@@ -2,16 +2,11 @@
 // See Lecture 52, part 2
 (function () {
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-  for (var i = 0; i < names.length; i++) {
-    var firstLetter = names[i].charAt(0).toLowerCase();
- if (firstLetter === 'j') {
-    byeSpeaker.speak(names[i]);
-  } else {
-    helloSpeaker.speak(names[i]);
-  }
+var speakWord = "Hello";   
+function speak(name) {
+  console.log(speakWord + " " + name);
 }
-})();
-    
+  
 
 // STEP 3: Create an object, called 'helloSpeaker' to which you will attach
 // the "speak" method and which you will expose to the global context
@@ -19,12 +14,12 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // var helloSpeaker =
 
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
-var speakWord = "Hello";
+//var speakWord = "Hello";
 
 // STEP 4: Rewrite the 'speak' function such that it is attached to the
 // helloSpeaker object instead of being a standalone function.
 // See Lecture 52, part 2
-function speak(name) {
+//function speak(name) {
   console.log(speakWord + " " + name);
 }
 
